@@ -10,7 +10,7 @@ public class IntoToEng {
 
 	    }
 
-	    //数値を英訳する変換するメソッド
+	    //���������������������������������������������
 	    static String translateEng(int n) {
 	    	String[] number = {"","one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen","twenty"};
 	    	String[] boss = {"","ten","twenty","thirty","fourty","fifty","sixty","seventy","eighty","ninety","hundred"};
@@ -18,6 +18,11 @@ public class IntoToEng {
 	    	String ans = "";
 	    	if(n==0)return "zero";
 	    	
+	    	if(k>99999){
+	    		ans += number[k/100000]+th(k);
+	    		k=k%100000;
+	    		if(k!=0) ans += " ";
+	    	}
 	    	if(k>999){
 	    		ans += number[k/1000]+th(k);
 	    		k=k%1000;
@@ -39,6 +44,9 @@ public class IntoToEng {
 	    	return ans;
 	}
 	    static String th(int k){
+	    	if(k>99999){
+	    		return " million";
+	    	}
 	    	if(k>999){
 	    		return " thousand";
 	    	}

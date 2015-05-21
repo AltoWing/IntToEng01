@@ -6,7 +6,7 @@ import static org.hamcrest.CoreMatchers.*;
 public class PairProEnTest {
 
 	@Test
-	public void いちからone() {
+	public void /*������������*/one() {
 		IntoToEng en = new IntoToEng();
 		String expected = "one";
 		String actual = en.translateEng(1);
@@ -14,7 +14,7 @@ public class PairProEnTest {
 	}
 	
 	@Test
-	public void じゅうからten() {
+	public void /*���������������*/ten() {
 		IntoToEng en = new IntoToEng();
 		String expected = "ten";
 		String actual = en.translateEng(10);
@@ -22,7 +22,7 @@ public class PairProEnTest {
 	}
 	
 	@Test
-	public void にじゅうからtwenty() {
+	public void /*������������������*/twenty() {
 		IntoToEng en = new IntoToEng();
 		String expected = "twenty";
 		String actual = en.translateEng(20);
@@ -30,7 +30,7 @@ public class PairProEnTest {
 	}
 	
 	@Test
-	public void じゅうさんからtwenty_three() {
+	public void /*���������������������*/twenty_three() {
 		IntoToEng en = new IntoToEng();
 		String expected = "twenty three";
 		String actual = en.translateEng(23);
@@ -38,7 +38,7 @@ public class PairProEnTest {
 	}
 	
 	@Test
-	public void さんじゅうからtwenty_three() {
+	public void /*���������������������*/twenty_three2() {
 		IntoToEng en = new IntoToEng();
 		String expected = "thirty";
 		String actual = en.translateEng(30);
@@ -46,7 +46,7 @@ public class PairProEnTest {
 	}
 	
 	@Test
-	public void ごじゅうはちからfifty_eight() {
+	public void /*������������������������*/fifty_eight() {
 		IntoToEng en = new IntoToEng();
 		String expected = "fifty eight";
 		String actual = en.translateEng(58);
@@ -54,7 +54,7 @@ public class PairProEnTest {
 	}
 	
 	@Test
-	public void きゅうじゅうきゅうからninety_nine() {
+	public void /*���������������������������������*/ninety_nine() {
 		IntoToEng en = new IntoToEng();
 		String expected = "ninety nine";
 		String actual = en.translateEng(99);
@@ -62,7 +62,7 @@ public class PairProEnTest {
 	}
 	
 	@Test
-	public void ひゃくからone_hunderd() {
+	public void /*���������������*/one_hunderd() {
 		IntoToEng en = new IntoToEng();
 		String expected = "one hundred";
 		String actual = en.translateEng(100);
@@ -70,7 +70,7 @@ public class PairProEnTest {
 	}
 	
 	@Test
-	public void きゅうひゃくからさん() {
+	public void /*������������������������������*/nine_hundred13() {
 		IntoToEng en = new IntoToEng();
 		String expected = "nine hundred thirteen";
 		String actual = en.translateEng(913);
@@ -78,21 +78,21 @@ public class PairProEnTest {
 	}
 	
 	@Test
-	public void せんにじゅうきゅう() {
+	public void /*���������������������������*/thou() {
 		IntoToEng en = new IntoToEng();
 		String expected = "one thousand twenty nine";
 		String actual = en.translateEng(1029);
 		assertThat(actual,is(expected));
 	}
 	@Test
-	public void 九千九百九十九() {
+	public void /*���������������������*/ninenine() {
 		IntoToEng en = new IntoToEng();
 		String expected = "nine thousand nine hundred ninety nine";
 		String actual = en.translateEng(9999);
 		assertThat(actual,is(expected));
 	}
 	@Test
-	public void 一万() {
+	public void /*������*/tenthou() {
 		IntoToEng en = new IntoToEng();
 		String expected = "ten thousand";
 		String actual = en.translateEng(10000);
